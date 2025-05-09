@@ -1,0 +1,8 @@
+services:
+  api:
+    image: rogeriofontes/slillb-ark-discovery:v1
+    container_name: slillb-ark-discovery
+    ports:
+      - "8761:8761"
+    environment:
+      SPRING_PROFILES_ACTIVE: ${SPRING_PROFILES_ACTIVE}
